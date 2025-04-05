@@ -1,9 +1,15 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Hero from './components/Hero/Hero';
+import FeaturedPosts from './components/FeaturedPosts/FeaturedPosts';
+import BlogPosts from './components/BlogPosts/BlogPosts';
+import Footer from './components/Footer/Footer';
 
 export default function Home() {
   return (
-    <div >"Home"     
-    </div>
+    <main>
+      <Hero />
+      <FeaturedPosts />
+      <BlogPosts />
+      <Footer />
+    </main>
   );
 }
