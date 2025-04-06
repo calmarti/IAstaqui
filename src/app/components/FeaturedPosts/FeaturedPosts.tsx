@@ -72,9 +72,7 @@ export default function FeaturedPosts() {
 
   return (
     <section className={styles.featuredPosts}>
-      <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>Artículos Destacados</h2>
-        
+      <div className={styles.container}>           
         <div className={styles.carouselContainer}>
           <div className={styles.carouselTrack} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {featuredPosts.map(post => (

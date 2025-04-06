@@ -7,7 +7,8 @@ export const posts: Post[] = [
     excerpt: "Explorando las nuevas características y limitaciones del modelo más avanzado de OpenAI",
     category: "Análisis",
     date: "5 de Abril, 2024",
-    readTime: "8 min"
+    readTime: "8 min",
+    content: ""
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ export const posts: Post[] = [
     excerpt: "Anthropic presenta su modelo más capaz hasta la fecha",
     category: "Noticias",
     date: "4 de Abril, 2024",
-    readTime: "5 min"
+    readTime: "5 min",
+    content: ""
   },
   {
     id: 3,
@@ -23,7 +25,8 @@ export const posts: Post[] = [
     excerpt: "Una guía práctica para desarrollar aplicaciones basadas en LLMs",
     category: "Tutoriales",
     date: "3 de Abril, 2024",
-    readTime: "12 min"
+    readTime: "12 min",
+    content: ""
   },
   {
     id: 4,
@@ -31,7 +34,8 @@ export const posts: Post[] = [
     excerpt: "Análisis de las capacidades y limitaciones del modelo multimodal de Google",
     category: "Análisis",
     date: "2 de Abril, 2024",
-    readTime: "7 min"
+    readTime: "7 min",
+    content: ""
   },
   {
     id: 5,
@@ -39,7 +43,8 @@ export const posts: Post[] = [
     excerpt: "Guía paso a paso para adaptar modelos de lenguaje a tus necesidades",
     category: "Tutoriales",
     date: "1 de Abril, 2024",
-    readTime: "15 min"
+    readTime: "15 min",
+    content: ""
   },
   {
     id: 6,
@@ -47,7 +52,8 @@ export const posts: Post[] = [
     excerpt: "Cómo los modelos de lenguaje están transformando la enseñanza y el aprendizaje",
     category: "Aplicaciones",
     date: "31 de Marzo, 2024",
-    readTime: "10 min"
+    readTime: "10 min",
+    content: ""
   },
   {
     id: 7,
@@ -55,7 +61,8 @@ export const posts: Post[] = [
     excerpt: "Técnicas avanzadas para obtener mejores resultados de los modelos de lenguaje",
     category: "Técnico",
     date: "30 de Marzo, 2024",
-    readTime: "9 min"
+    readTime: "9 min",
+    content: ""
   },
   {
     id: 8,
@@ -63,7 +70,8 @@ export const posts: Post[] = [
     excerpt: "Análisis del modelo Mistral y su impacto en el ecosistema de IA",
     category: "Noticias",
     date: "29 de Marzo, 2024",
-    readTime: "6 min"
+    readTime: "6 min",
+    content: ""
   },
   {
     id: 9,
@@ -71,7 +79,8 @@ export const posts: Post[] = [
     excerpt: "Cómo los modelos de lenguaje están revolucionando la medicina",
     category: "Aplicaciones",
     date: "28 de Marzo, 2024",
-    readTime: "11 min"
+    readTime: "11 min",
+    content: ""
   },
   {
     id: 10,
@@ -79,7 +88,8 @@ export const posts: Post[] = [
     excerpt: "Entendiendo los embeddings y su importancia en los sistemas de recuperación",
     category: "Técnico",
     date: "27 de Marzo, 2024",
-    readTime: "8 min"
+    readTime: "8 min",
+    content: ""
   },
   {
     id: 11,
@@ -87,7 +97,8 @@ export const posts: Post[] = [
     excerpt: "Evolución y tendencias en el desarrollo de asistentes conversacionales",
     category: "Tendencias",
     date: "26 de Marzo, 2024",
-    readTime: "7 min"
+    readTime: "7 min",
+    content: ""
   },
   {
     id: 12,
@@ -95,7 +106,8 @@ export const posts: Post[] = [
     excerpt: "Cómo medir el rendimiento y la calidad de los modelos de lenguaje",
     category: "Técnico",
     date: "25 de Marzo, 2024",
-    readTime: "13 min"
+    readTime: "13 min",
+    content: ""
   },
   {
     id: 13,
@@ -103,7 +115,8 @@ export const posts: Post[] = [
     excerpt: "Cómo los modelos de lenguaje están transformando la programación",
     category: "Aplicaciones",
     date: "24 de Marzo, 2024",
-    readTime: "9 min"
+    readTime: "9 min",
+    content: ""
   },
   {
     id: 14,
@@ -111,7 +124,8 @@ export const posts: Post[] = [
     excerpt: "Estrategias para abordar los prejuicios en los modelos de lenguaje",
     category: "Ética",
     date: "23 de Marzo, 2024",
-    readTime: "10 min"
+    readTime: "10 min",
+    content: ""
   },
   {
     id: 15,
@@ -119,7 +133,8 @@ export const posts: Post[] = [
     excerpt: "Guía práctica para implementar modelos de lenguaje en apps",
     category: "Tutoriales",
     date: "22 de Marzo, 2024",
-    readTime: "12 min"
+    readTime: "12 min",
+    content: ""
   },
   {
     id: 16,
@@ -127,7 +142,8 @@ export const posts: Post[] = [
     excerpt: "Panorama actual de los principales proveedores y sus modelos",
     category: "Análisis",
     date: "21 de Marzo, 2024",
-    readTime: "8 min"
+    readTime: "8 min",
+    content: ""
   },
   {
     id: 17,
@@ -135,7 +151,8 @@ export const posts: Post[] = [
     excerpt: "Aplicaciones de los modelos de lenguaje en el arte y la creatividad",
     category: "Aplicaciones",
     date: "20 de Marzo, 2024",
-    readTime: "7 min"
+    readTime: "7 min",
+    content: ""
   },
   {
     id: 18,
@@ -143,7 +160,8 @@ export const posts: Post[] = [
     excerpt: "Estrategias para reducir gastos al implementar modelos de lenguaje",
     category: "Técnico",
     date: "19 de Marzo, 2024",
-    readTime: "9 min"
+    readTime: "9 min",
+    content: ""
   },
   {
     id: 19,
@@ -151,7 +169,8 @@ export const posts: Post[] = [
     excerpt: "Consideraciones para proteger datos al usar modelos de lenguaje",
     category: "Seguridad",
     date: "18 de Marzo, 2024",
-    readTime: "11 min"
+    readTime: "11 min",
+    content: ""
   },
   {
     id: 20,
@@ -159,7 +178,8 @@ export const posts: Post[] = [
     excerpt: "Cómo los modelos de lenguaje están transformando las finanzas",
     category: "Aplicaciones",
     date: "17 de Marzo, 2024",
-    readTime: "8 min"
+    readTime: "8 min",
+    content: ""
   },
   {
     id: 21,
@@ -167,7 +187,8 @@ export const posts: Post[] = [
     excerpt: "Predicciones sobre la evolución de los modelos de lenguaje",
     category: "Tendencias",
     date: "16 de Marzo, 2024",
-    readTime: "10 min"
+    readTime: "10 min",
+    content: ""
   },
   {
     id: 22,
@@ -175,7 +196,8 @@ export const posts: Post[] = [
     excerpt: "Guía paso a paso para crear asistentes conversacionales efectivos",
     category: "Tutoriales",
     date: "15 de Marzo, 2024",
-    readTime: "14 min"
+    readTime: "14 min",
+    content: ""
   },
   {
     id: 23,
@@ -183,7 +205,8 @@ export const posts: Post[] = [
     excerpt: "Análisis de las políticas y regulaciones sobre modelos de lenguaje",
     category: "Legal",
     date: "14 de Marzo, 2024",
-    readTime: "9 min"
+    readTime: "9 min",
+    content: ""
   },
   {
     id: 24,
@@ -191,6 +214,7 @@ export const posts: Post[] = [
     excerpt: "Aplicaciones de los modelos de lenguaje en la ciencia y la investigación",
     category: "Aplicaciones",
     date: "13 de Marzo, 2024",
-    readTime: "8 min"
+    readTime: "8 min",
+    content: ""
   }
 ]; 

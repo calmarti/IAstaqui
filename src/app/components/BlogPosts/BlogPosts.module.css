@@ -36,8 +36,8 @@
   content: '';
   position: absolute;
   bottom: -8px;
-  left: 5px;
-  width:320px;
+  left: 6px;
+  width:312px;
   height: 4px;
   background: var(--primary);
 }
