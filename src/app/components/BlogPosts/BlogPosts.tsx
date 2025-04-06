@@ -198,7 +198,7 @@ const posts = [
 
 export default function BlogPosts() {
   return (
-    <section className={styles.blogPosts}>
+    <section id="articulos" className={styles.blogPosts}>
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Últimos Artículos</h2>
         <div className={styles.grid}>

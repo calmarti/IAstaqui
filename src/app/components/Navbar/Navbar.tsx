@@ -10,7 +10,7 @@ export default function Navbar() {
         </div>
         <div className={styles.links}>
           <a href="/" className={styles.link}>Inicio</a>
-          <a href="/articulos" className={styles.link}>Artículos</a>
+          <a href="#articulos" className={styles.link}>Artículos</a>
           <a href="/categorias" className={styles.link}>Categorías</a>
           <a href="/tutoriales" className={styles.link}>Tutoriales</a>
         </div>

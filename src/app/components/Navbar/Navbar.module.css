@@ -90,7 +90,7 @@
 .link {
   color: var(--text-primary);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: relative;
   padding: 0.5rem 0;
   transition: color 0.3s ease;
@@ -110,7 +110,7 @@
   background: var(--primary);
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
 }
 
 .link:hover::after {

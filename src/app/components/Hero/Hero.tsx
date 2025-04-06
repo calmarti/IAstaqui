@@ -3,15 +3,7 @@ import styles from './Hero.module.css';
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <div className={styles.background}>
-        <div className={styles.accentLine}></div>
-        <div className={styles.accentLine}></div>
-        <div className={styles.accentLine}></div>
-        <div className={styles.accentDot}></div>
-        <div className={styles.accentDot}></div>
-        <div className={styles.accentDot}></div>
-        <div className={styles.accentDot}></div>
-        <div className={styles.accentDot}></div>
+      <div className={styles.background}>  
       </div>
       <div className={styles.container}>
         <div className={styles.content}>
@@ -19,12 +11,13 @@ export default function Hero() {
             <span className={styles.highlight}>IA</span>staqui
           </h1>
           <p className={styles.subtitle}>
-            El vertiginoso mundo de la IA a tu alcance 
+           Tu guía para sobrevivir la revolución de la IA 
           </p>
           <blockquote className={styles.quote}>
-            La IA no te quitará el trabajo, un tío que sabe usar la IA sí. 
+            La IA no te quitará el trabajo, lo hará alguien que la sepa usar
+            <span className={styles.spanInQuote}>Jensen Huang</span>
           </blockquote>
-          <span>Jensen Huang</span>
+         
         </div>
       </div>
     </section>
