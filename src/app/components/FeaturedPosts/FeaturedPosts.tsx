@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect } from 'react';
 import styles from './FeaturedPosts.module.css';
-import PostCard, { Post } from '../PostCard/PostCard';
+import PostCard from '../PostCard/PostCard';
 import postStyles from '../PostCard/PostCard.module.css';
+import { Post } from '@/app/types';
 
 // Featured posts data
 const featuredPosts: Post[] = [
@@ -12,7 +13,9 @@ const featuredPosts: Post[] = [
     excerpt: "Cómo los modelos de lenguaje están transformando los procesos empresariales y la toma de decisiones",
     category: "Tendencias",
     date: "6 de Abril, 2024",
-    readTime: "10 min"
+    readTime: "10 min",
+    content: ""
+
   },
   {
     id: 2,
@@ -20,7 +23,8 @@ const featuredPosts: Post[] = [
     excerpt: "Técnicas de Recuperación Aumentada de Generación para reducir alucinaciones",
     category: "Técnico",
     date: "5 de Abril, 2024",
-    readTime: "7 min"
+    readTime: "7 min",
+    content: ""
   },
   {
     id: 3,
@@ -28,7 +32,8 @@ const featuredPosts: Post[] = [
     excerpt: "Reflexiones sobre el desarrollo responsable de sistemas de IA avanzados",
     category: "Ética",
     date: "4 de Abril, 2024",
-    readTime: "9 min"
+    readTime: "9 min",
+    content: ""
   }
 ];
 

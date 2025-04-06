@@ -1,27 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './PostCard.module.css';
+import { Post, PostCardProps } from '../../types';
 
-export interface Post {
-  id: number;
-  title: string;
-  excerpt: string;
-  category: string;
-  date: string;
-  readTime: string;
-  content: string;
-  image?: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-}
-
-interface PostCardProps {
-  post: Post;
-  className?: string;
-}
 
 const PostCard: React.FC<PostCardProps> = ({ post, className = '' }) => {
   return (
