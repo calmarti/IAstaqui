@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import styles from './FeaturedPosts.module.css';
 import PostCard from '../PostCard/PostCard';
 import postStyles from '../PostCard/PostCard.module.css';
-import { Post } from '@/app/types';
+import { Post } from '@/app/types/types';
 
 // Featured posts data
 const featuredPosts: Post[] = [

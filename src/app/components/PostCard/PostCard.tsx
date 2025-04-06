@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './PostCard.module.css';
-import { Post, PostCardProps } from '../../types';
+import { Post, PostCardProps } from '../../types/types';
 
 
 const PostCard: React.FC<PostCardProps> = ({ post, className = '' }) => {
