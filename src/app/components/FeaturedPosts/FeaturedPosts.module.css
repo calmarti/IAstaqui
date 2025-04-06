@@ -36,101 +36,108 @@
   content: '';
   position: absolute;
   bottom: -8px;
-  left: 0;
-  width: 60px;
+  left: 5px;
+  width: 350px;
   height: 4px;
   background: var(--primary);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-}
-
-.post {
-  background: var(--background);
-  border-radius: 10px;
-  overflow: hidden;
+/* Carousel Styles */
+.carouselContainer {
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: var(--background);
   border: 1px solid var(--border);
 }
 
-.post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.postContent {
-  padding: 1.5rem;
-  position: relative;
-  z-index: 1;
-}
-
-.category {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  background: rgba(59, 130, 246, 0.1);
-  color: var(--primary);
-  border-radius: 20px;
-  font-size: 0.8rem;
-  margin-bottom: 0.8rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.category::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-}
-
-.title {
-  font-size: 1.25rem;
-  color: var(--text-primary);
-  margin-bottom: 0.8rem;
-  line-height: 1.4;
-}
-
-.excerpt {
-  color: var(--text-secondary);
-  line-height: 1.5;
-  margin-bottom: 1.2rem;
-  font-size: 0.95rem;
-}
-
-.meta {
+.carouselTrack {
   display: flex;
-  justify-content: space-between;
-  color: var(--text-light);
-  font-size: 0.8rem;
-  padding-top: 0.8rem;
-  border-top: 1px solid var(--border);
+  transition: transform 0.5s ease;
+  width: 100%;
 }
 
-.hoverEffect {
+/* Post styles moved to PostCard.module.css */
+
+/* Carousel Navigation */
+.carouselButton {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--background);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.post:hover .hoverEffect {
-  opacity: 1;
+.carouselButton:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.prevButton {
+  left: 20px;
+}
+
+.nextButton {
+  right: 20px;
+}
+
+.carouselButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Carousel Indicators */
+.carouselIndicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeIndicator {
+  background: var(--primary);
+  transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .carouselButton {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
 } 
