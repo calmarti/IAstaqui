@@ -12,14 +12,14 @@ export function getAllPosts(): Post[] {
 
   const files = fs.readdirSync(postsDirectory);
   const posts = files
-    .filter((file) => file.endsWith('.md') || file.endsWith('.mdx'))
+    .filter((file) => file.endsWith('.md'))
     .map((file) => {
       const filePath = path.join(postsDirectory, file);
       const fileContent = fs.readFileSync(filePath, 'utf8');
       const { data } = matter(fileContent);
       
       return {
-        slug: file.replace(/\.mdx$/, ''),
+        slug: file.replace(/\.md$/, ''),
         ...(data as Omit<Post, 'slug'>),
       } as Post;
     })

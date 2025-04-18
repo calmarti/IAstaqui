@@ -13,6 +13,7 @@ export interface Post {
       width: number;
       height: number;
     };
+    slug: string;
   }
 
   export interface PostCardProps {

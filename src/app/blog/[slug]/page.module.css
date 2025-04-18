@@ -1,0 +1,85 @@
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.heroImage {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Markdown content styles */
+.content :global(h1) {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+}
+
+.content :global(h2) {
+  font-size: 2rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.content :global(h3) {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.content :global(p) {
+  margin-bottom: 1.5rem;
+}
+
+.content :global(ul),
+.content :global(ol) {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.content :global(li) {
+  margin-bottom: 0.5rem;
+}
+
+.content :global(pre) {
+  background: var(--background-alt);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.content :global(code) {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.contentImage {
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.content :global(blockquote) {
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--text-secondary);
+} 
