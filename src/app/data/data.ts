@@ -1,4 +1,6 @@
+import { slugify } from 'markdown-to-jsx';
 import { Post } from '../types/posts';
+
 
 export const posts: Post[] = [
   {
@@ -8,7 +10,8 @@ export const posts: Post[] = [
     category: "Análisis",
     date: "5 de Abril, 2024",
     readTime: "8 min",
-    content: ""
+    content: "",
+    slug:"gpt-4-un-analisis"
   },
   {
     id: 2,
@@ -17,7 +20,8 @@ export const posts: Post[] = [
     category: "Noticias",
     date: "4 de Abril, 2024",
     readTime: "5 min",
-    content: ""
+    content: "",
+    slug: "claude-3-el-nuevo-competidor-en-el-mercado-de-llms"
   },
   {
     id: 3,
@@ -26,7 +30,8 @@ export const posts: Post[] = [
     category: "Tutoriales",
     date: "3 de Abril, 2024",
     readTime: "12 min",
-    content: ""
+    content: "",
+    slug: "construyendo-aplicaciones-con-langchain"
   },
   {
     id: 4,
@@ -35,7 +40,8 @@ export const posts: Post[] = [
     category: "Análisis",
     date: "2 de Abril, 2024",
     readTime: "7 min",
-    content: ""
+    content: "",
+    slug: "gemini-pro-la-apuesta-de-google-por-los-llms"
   },
   {
     id: 5,
@@ -44,7 +50,8 @@ export const posts: Post[] = [
     category: "Tutoriales",
     date: "1 de Abril, 2024",
     readTime: "15 min",
-    content: ""
+    content: "",
+    slug: "fine-tuning-personalizando-llms-para-casos-especificos"
   },
   {
     id: 6,
@@ -53,8 +60,9 @@ export const posts: Post[] = [
     category: "Aplicaciones",
     date: "31 de Marzo, 2024",
     readTime: "10 min",
-    content: ""
-  },
+    content: "",
+    slug: "el-impacto-de-los-llms-en-la-educacion"
+  },  
   {
     id: 7,
     title: "Prompt Engineering: El arte de comunicarse con LLMs",
@@ -62,8 +70,9 @@ export const posts: Post[] = [
     category: "Técnico",
     date: "30 de Marzo, 2024",
     readTime: "9 min",
-    content: ""
-  },
+    content: "",
+    slug: "prompt-engineering-el-arte-de-comunicarse-con-llms"
+  },  
   {
     id: 8,
     title: "Mistral AI: El nuevo jugador en el mercado de LLMs",
@@ -71,7 +80,8 @@ export const posts: Post[] = [
     category: "Noticias",
     date: "29 de Marzo, 2024",
     readTime: "6 min",
-    content: ""
+    content: "",
+    slug: "mistral-ai-el-nuevo-jugador-en-el-mercado-de-llms"
   },
   {
     id: 9,
@@ -80,7 +90,8 @@ export const posts: Post[] = [
     category: "Aplicaciones",
     date: "28 de Marzo, 2024",
     readTime: "11 min",
-    content: ""
+    content: "",
+    slug: "llms-en-la-atencion-medica-oportunidades-y-desafios"
   },
   {
     id: 10,
@@ -89,7 +100,8 @@ export const posts: Post[] = [
     category: "Técnico",
     date: "27 de Marzo, 2024",
     readTime: "8 min",
-    content: ""
+    content: "",
+    slug: "vectorizacion-de-texto-fundamentos-para-rag"
   },
   {
     id: 11,
@@ -98,7 +110,8 @@ export const posts: Post[] = [
     category: "Tendencias",
     date: "26 de Marzo, 2024",
     readTime: "7 min",
-    content: ""
+    content: "",
+    slug: "el-futuro-de-los-asistentes-virtuales-con-llms"
   },
   {
     id: 12,
@@ -107,8 +120,9 @@ export const posts: Post[] = [
     category: "Técnico",
     date: "25 de Marzo, 2024",
     readTime: "13 min",
-    content: ""
-  },
+    content: "",
+    slug: "evaluacion-de-llms-metricas-y-metodologias"
+  },  
   {
     id: 13,
     title: "LLMs en el desarrollo de software",
@@ -116,7 +130,8 @@ export const posts: Post[] = [
     category: "Aplicaciones",
     date: "24 de Marzo, 2024",
     readTime: "9 min",
-    content: ""
+    content: "",
+    slug: "llms-en-el-desarrollo-de-software"
   },
   {
     id: 14,
@@ -125,7 +140,8 @@ export const posts: Post[] = [
     category: "Ética",
     date: "23 de Marzo, 2024",
     readTime: "10 min",
-    content: ""
+    content: "",
+    slug: "sesgos-en-los-llms-identificacion-y-mitigacion"
   },
   {
     id: 15,
@@ -134,7 +150,8 @@ export const posts: Post[] = [
     category: "Tutoriales",
     date: "22 de Marzo, 2024",
     readTime: "12 min",
-    content: ""
+    content: "",
+    slug: "integracion-de-llms-en-aplicaciones-moviles"
   },
   {
     id: 16,
@@ -143,7 +160,8 @@ export const posts: Post[] = [
     category: "Análisis",
     date: "21 de Marzo, 2024",
     readTime: "8 min",
-    content: ""
+    content: "",
+    slug: "el-mercado-de-los-llms-analisis-de-la-competencia"
   },
   {
     id: 17,
@@ -152,7 +170,8 @@ export const posts: Post[] = [
     category: "Aplicaciones",
     date: "20 de Marzo, 2024",
     readTime: "7 min",
-    content: ""
+    content: "",
+    slug: "llms-para-la-generacion-de-contenido-creativo"
   },
   {
     id: 18,
@@ -161,8 +180,9 @@ export const posts: Post[] = [
     category: "Técnico",
     date: "19 de Marzo, 2024",
     readTime: "9 min",
-    content: ""
-  },
+    content: "",
+    slug: "optimizacion-de-costos-en-el-uso-de-llms"
+  },  
   {
     id: 19,
     title: "Privacidad y seguridad en aplicaciones con LLMs",
@@ -170,7 +190,8 @@ export const posts: Post[] = [
     category: "Seguridad",
     date: "18 de Marzo, 2024",
     readTime: "11 min",
-    content: ""
+    content: "",
+    slug: "privacidad-y-seguridad-en-aplicaciones-con-llms"
   },
   {
     id: 20,
@@ -179,7 +200,8 @@ export const posts: Post[] = [
     category: "Aplicaciones",
     date: "17 de Marzo, 2024",
     readTime: "8 min",
-    content: ""
+    content: "",
+    slug: "llms-en-el-analisis-financiero"
   },
   {
     id: 21,
@@ -188,7 +210,8 @@ export const posts: Post[] = [
     category: "Tendencias",
     date: "16 de Marzo, 2024",
     readTime: "10 min",
-    content: ""
+    content: "",
+    slug: "el-futuro-de-los-llms-tendencias-para-2025"
   },
   {
     id: 22,
@@ -197,7 +220,8 @@ export const posts: Post[] = [
     category: "Tutoriales",
     date: "15 de Marzo, 2024",
     readTime: "14 min",
-    content: ""
+    content: "",
+    slug: "implementacion-de-chatbots-con-llms"
   },
   {
     id: 23,
@@ -206,7 +230,8 @@ export const posts: Post[] = [
     category: "Legal",
     date: "14 de Marzo, 2024",
     readTime: "9 min",
-    content: ""
+    content: "",
+    slug: "regulacion-de-los-llms-estado-actual-y-perspectivas"
   },
   {
     id: 24,
@@ -215,6 +240,8 @@ export const posts: Post[] = [
     category: "Aplicaciones",
     date: "13 de Marzo, 2024",
     readTime: "8 min",
-    content: ""
+    content: "",
+    slug: "llms-para-la-investigacion-cientifica"
   }
-]; 
+];
+

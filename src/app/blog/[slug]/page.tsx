@@ -22,13 +22,14 @@ async function getPostContent(slug: string) {
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({
-    slug: post.slug,
+    params: { slug: post.slug },
   }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
+ const { slug } = await params;
   const posts = getAllPosts();
-  const post = posts.find((p) => p.slug === params.slug);
+  const post = posts.find((p) => p.slug === slug);
   
   if (!post) return {};
 
@@ -39,14 +40,16 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const { slug } = await params;
+
   const posts = getAllPosts();
-  const post = posts.find((p) => p.slug === params.slug);
+  const post = posts.find((p) => p.slug === slug);
   
   if (!post) {
     notFound();
   }
 
-  const content = await getPostContent(params.slug);
+  const content = await getPostContent(slug);
 
   if (!content) {
     notFound();
