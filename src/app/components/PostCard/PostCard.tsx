@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './PostCard.module.css';
-import { Post, PostCardProps } from '../../types/posts';
-
+import { PostCardProps } from '../../types/posts';
 
 const PostCard: React.FC<PostCardProps> = ({ post, className = '' }) => {
   return (
@@ -23,7 +23,12 @@ const PostCard: React.FC<PostCardProps> = ({ post, className = '' }) => {
       <div className={styles.postContent}>
         <span className={styles.category}>{post.category}</span>
         <h3 className={styles.title}>{post.title}</h3>
-        <p className={styles.excerpt}>{post.excerpt}</p>
+        <p className={styles.excerpt}>
+          {post.excerpt}
+          <Link href={`/blog/${post.slug}`} className={styles.readMore}>
+            ... Leer más
+          </Link>
+        </p>
         <div className={styles.meta}>
           <span className={styles.date}>{post.date}</span>
           <span className={styles.readTime}>{post.readTime}</span>

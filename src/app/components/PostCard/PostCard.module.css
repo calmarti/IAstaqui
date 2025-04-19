@@ -106,4 +106,16 @@
 
 .post:hover .hoverEffect {
   opacity: 1;
+}
+
+.readMore {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.readMore:hover {
+  color: var(--primary-dark);
 } 
